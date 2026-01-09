@@ -69,6 +69,13 @@ const Header = () => {
                   </Link>
                 );
               })}
+              <Link
+                to="/admin-panel"
+                className="flex items-center gap-2 px-6 py-3 rounded-md font-medium transition-smooth hover-lift text-foreground hover:bg-muted"
+              >
+                <Icon name="Settings" size={20} />
+                <span>Admin</span>
+              </Link>
             </nav>
           </div>
 

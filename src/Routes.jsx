@@ -9,6 +9,7 @@ import Login from './pages/login';
 import TourCatalog from './pages/tour-catalog';
 import UserDashboard from './pages/user-dashboard';
 import Homepage from './pages/homepage';
+import AdminPanel from './pages/admin-panel';
 
 const Routes = () => {
   return (
@@ -24,6 +25,7 @@ const Routes = () => {
         <Route path="/tour-catalog" element={<TourCatalog />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
         <Route path="*" element={<NotFound />} />
       </RouterRoutes>
       </ErrorBoundary>
