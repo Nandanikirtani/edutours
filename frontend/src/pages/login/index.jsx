@@ -5,7 +5,7 @@ import Icon from '../../components/AppIcon';
 import Image from '../../components/AppImage';
 import LoginForm from './components/LoginForm';
 import TrustIndicators from './components/TrustIndicators';
-import LanguageSelector from './components/LanguageSelector';
+// import LanguageSelector from './components/LanguageSelector';
 import RegistrationPrompt from './components/RegistrationPrompt';
 
 const Login = () => {
@@ -89,30 +89,9 @@ const Login = () => {
             </div>
 
             <div className="order-1 lg:order-2">
-              <div className="bg-card rounded-xl shadow-warm-lg p-6 md:p-8 lg:p-10 border border-border">
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl md:text-3xl font-heading font-semibold text-foreground">
-                    Sign In
-                  </h2>
-                  <LanguageSelector />
-                </div>
-
+              <div className='min-h-7'>
                 <LoginForm />
-
-                <div className="mt-8 pt-8 border-t border-border">
-                  <div className="text-center">
-                    <p className="text-sm text-muted-foreground font-caption mb-4">
-                      Don't have an account?
-                    </p>
-                    <Link to="/register">
-                      <button className="text-base font-semibold text-primary hover:text-primary/80 transition-smooth focus-ring rounded px-4 py-2">
-                        Create Free Account →
-                      </button>
-                    </Link>
-                  </div>
                 </div>
-              </div>
-
               <div className="mt-8 lg:hidden">
                 <TrustIndicators />
               </div>
